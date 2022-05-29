@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+/*--------------HOME-------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:radial-gradient( white, #1162ac, black);
+}
+
+/*---------TITULO---------*/
+
+header {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 7px 7px 7px rgb(199, 193, 193);
+  font-size: 2rem;
+  color: #ffffff;
+  border-bottom: #c9c5c5 2px groove;
+  padding: 0;
+}
+
+/*---------------SUMADOR--------------- */
+
+.sumador{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 25px;
+  width: 140px;
+  border: groove black 2px;
+  border-radius: 17px 17px 17px 17px;
+  box-shadow: 0 0 15px #7a18d4;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#pagar{
+  width: 6rem;
+  margin-top: 1rem;
+  box-shadow: 0 0 15px #7a18d4;
+  border-radius: 13px;
+  background-color: #93989b;
+  color: #ffff;
+  font-size: 1rem;
+}
+
+#cancelar{
+  width: 6rem;
+  margin-top: 1rem;
+  box-shadow: 0 0 15px #7a18d4;
+  border-radius: 13px;
+  background-color: #93989b;
+  color: #ffff;
+  font-size: 1rem;
+}
+
+
+
+/*---------VENTANA DE CREAR----------*/
+
+.modal{
+    width: 24rem;
+    height: 23rem;
+    margin-left: 88px;
+    margin-top: 71px;
+    border: groove black 2px;
+    border-radius: 17px 17px 17px 17px;
+    box-shadow: 0 0 15px #7a18d4;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+/*-----------LOGO----------*/
+
+img{
+    width: 44%;
+    height: 45%;
+    margin-top: 7px;
+    margin-bottom: 4px;
+    border-radius: 84px;
+}
+
+/*-----INGRESAR TEXTO-----*/
+
+.modal>input{
+    width: 14rem;
+    margin-top: 1rem;
+    box-shadow: 0 0 15px #7a18d4;
+    border-radius: 13px;
+    background-color: #93989b;
+    color: #ffff;
+    font-size: 1rem;
+}
+
+.modal>input[type="file"]{
+    width: 14rem;
+    height: 2rem;
+    border-radius: 5px;
+    color: #ffff;
+    font-size: 1rem;
+    margin-left: 0rem;
+    margin-bottom: 8px;
+}
+
+.modal>button{
+    width: 9rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    background-color: rgb(235, 166, 18);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.modal>button:hover,
+.modal>button:focus{
+    background-color: #0ab2f5;
+    font-weight: 900;
+    color: #ffff;
+}
+
+/*---------BOTONES OPCIONES--------*/
+select {
+  width: 12rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 15px #7a18d4;
+  border-radius: 15px;
+  background-color: #93989b;
+  color: #ffff;
+}
+
+#opcion-create{
+    width: 12rem;
+    margin-top: 2rem;
+    box-shadow: 0 0 15px #7a18d4;
+    border-radius: 15px;
+    background-color: #93989b;
+    color: #ffff;
+}
+
+/*--------CARTAS-----------*/
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-product {
+  margin: 1rem;
+  width: 13rem;
+  height: 17rem;
+  border-radius: 15px;
+  border: groove #3e6882 2px;
+  background-color: #D5F5E3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-product {
+  width: 94%;
+  border-radius: 15px 15px 15px 15px;
+  height: 60%;
+  margin-top: 5px;
+}
+
+.name-product {
+  margin-top: 0.8rem;
+  color: #949ea0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.price-product {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #d83d21;
+}
+
+
+/*-------BOTONES---------*/
+
+.btn-add {
+  width: 8rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  background-color: rgb(235, 166, 18);
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  margin-top: 3px;
+}
+
+.btn-add:hover,
+.btn-add:focus {
+  cursor: pointer;
+  background-color: #0ab2f5;
+  font-weight: 900;
+  color: #c5c5ba;
+}
+
+.deleted{
+margin-left: 11rem;
+border: none;
+background-color: rgb(235, 166, 18);
+color: #ffffff;
+height: 2rem;
+width: 2rem;
+border-radius: 0px 10px 0px 10px;
+cursor: pointer;
+}
+
+.deleted:hover{
+border: none;
+background-color: #0ab2f5;
+color: #c5c5ba;
+height: 2rem;
+width: 2rem;
+border-radius: 0px 10px 0px 10px;
+cursor: pointer;
+border: 1px solid rgb(231, 226, 226);
+}
+
+#eliminar{
+    margin-left: 22rem;
+    border: none;
+    background-color: rgb(235, 166, 18);
+    color: #ffffff;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0px 12px 0px 12px;
+    cursor: pointer;
+}
+
+#eliminar:hover{
+    border: none;
+    background-color: #0ab2f5;
+    color: #c5c5ba;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0px 12px 0px 12px;
+    cursor: pointer;
+    border: 1px solid rgb(231, 226, 226);
+    }

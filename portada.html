@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Carrito de Compras</h1></header>
+    <div class="sumador">
+      Total a pagar
+      <span id="contador">0</span> USD
+    </div>
+    <div>
+      <button id="pagar">Comprar</button>
+      <button id="cancelar">Cancelar</button>
+    </div>
+    <div class="container">
+      <div class="modal">
+        <button id="eliminar">X</button>
+        <img src="/imagenes/logo.png" alt="">
+        <input type="text" id="nuevo_producto" placeholder="Name">
+        <input type="text" id="nuevo_precio" placeholder="Price">
+        <input type="file" id="nueva_imagen">
+        <button id="crear">Crear Producto</button>
+      </div>
+    
+      <select name="" id="series">
+        <option value="">Select a option</option>    
+      </select>
+      <button id="opcion-create">Create a New Product</button>
+      <select name="" id="filter">
+        <option value="">Select Filter</option>
+        <option value="Menores a 40">Menores a 40</option>
+        <option value="Entre 45 y 61">Entre 45 y 61</option>
+        <option value="Mayores 61 a 80">Mayores 61 a 80</option>
+        <option value="Elevados a 100">Elevados a 100</option>
+      </select>
+    </div>
+    <main id="contenedor"></main>
+    <script src="app.js"></script>
+    <script src="series.js"></script> 
+</body>
+</html>
